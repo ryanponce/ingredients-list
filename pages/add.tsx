@@ -155,6 +155,7 @@ function Add() {
             {({ form, field }: FieldProps<FormValues>) => (
               <FileField
                 onUpload={(image) => form.setFieldValue("image", image)}
+                // @ts-ignore
                 value={field.value}
               />
             )}
